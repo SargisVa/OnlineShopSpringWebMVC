@@ -62,14 +62,14 @@
 </form>
 <c:choose>
     <c:when test="${user != null}">
-        <a href="${pageContext.request.contextPath}/user" class="user-name">${user.userName}</a>
+        <a href="${pageContext.request.contextPath}/user" class="user-name">${user.username}</a>
     </c:when>
     <c:otherwise>
         <a href="${pageContext.request.contextPath}/login" class="log-in">Log in</a>
         <a href="${pageContext.request.contextPath}/signup" class="sign-up">Sign up</a>
     </c:otherwise>
 </c:choose>
-<c:forEach var="post" items="${posts}">
+<c:forEach var="post" items="${sessionScope.posts}">
     <div class="post">
         <img alt="image" src="${post.imageUrl}"/>
         <h3>${post.title}</h3>
