@@ -17,8 +17,6 @@ import java.util.Map;
 @RequestMapping(value = "/login")
 public class LoginController {
 
-    //TODO login redirect to home crashes
-
     private final LoginService loginService;
 
     @Autowired
