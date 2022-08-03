@@ -69,7 +69,7 @@
         <a href="${pageContext.request.contextPath}/signup" class="sign-up">Sign up</a>
     </c:otherwise>
 </c:choose>
-<c:forEach var="post" items="${sessionScope.posts}">
+<c:forEach var="post" items="${posts}">
     <div class="post">
         <img alt="image" src="${post.imageUrl}"/>
         <h3>${post.title}</h3>
