@@ -61,8 +61,8 @@
     </label>
 </form>
 <c:choose>
-    <c:when test="${user != null}">
-        <a href="${pageContext.request.contextPath}/userprofile" class="user-name">${user.username}</a>
+    <c:when test="${sessionScope.user != null}">
+        <a href="${pageContext.request.contextPath}/userprofile" class="user-name">${sessionScope.user.username}</a>
     </c:when>
     <c:otherwise>
         <a href="${pageContext.request.contextPath}/login" class="log-in">Log in</a>
