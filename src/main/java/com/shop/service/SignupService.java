@@ -20,7 +20,7 @@ public class SignupService {
             DB.users.add(user);
             redirectView = new RedirectView("login");
         } catch (IllegalArgumentException e) {
-            redirectAttributes.addFlashAttribute("msg", e.getMessage());
+            redirectAttributes.addAttribute("msg", e.getMessage());
             redirectView = new RedirectView("signup");
         }
         return redirectView;
