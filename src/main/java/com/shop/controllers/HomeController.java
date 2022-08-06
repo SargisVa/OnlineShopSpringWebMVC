@@ -11,10 +11,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public ModelAndView getHome( ) {
-        ModelAndView modelAndView =  new ModelAndView("home");
+    public ModelAndView getHome() {
+        ModelAndView modelAndView = new ModelAndView("home");
         modelAndView.addObject("posts", DB.posts);
         return modelAndView;
     }
-
 }
