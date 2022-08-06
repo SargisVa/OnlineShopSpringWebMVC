@@ -14,15 +14,11 @@ public class DB {
     public static final List<User> users = new ArrayList<>();
 
     static {
-<<<<<<< HEAD
         initRandomDB(users, posts);
-=======
-        posts = new ArrayList<>();
-        users = new ArrayList<>();
         users.add(new User("Taron", "123"));
         users.add(new User("Davit", "Hakobyan", "Davit", "taronhakobyan033@gmail.com", "123"));
 
->>>>>>> 12bd1b44ed1315360eb12d8d4ed62e6c03a6f19c
+
     }
 
     public static boolean containsUserWithUsername(String username) {

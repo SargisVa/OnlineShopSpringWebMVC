@@ -32,7 +32,11 @@
     </style>
 </head>
 <body>
+<<<<<<< HEAD
+<c:if test="${param.msg != null}">
+=======
 <c:if test="${msg != null}">
+>>>>>>> 4ba6791d3e25acd975f97cd08ebd30f11e416c9f
     <p class="error">Invalid username or password</p>
 </c:if>
 <a href="${pageContext.request.contextPath}/home" class="home">Home</a>

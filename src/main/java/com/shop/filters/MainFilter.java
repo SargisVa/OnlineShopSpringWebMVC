@@ -28,16 +28,7 @@ public class MainFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {}
 
-    @Override
-<<<<<<< HEAD:src/main/java/com/shop/filters/MainFilter.java
-=======
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        //TODO logic???
-        userService.userAuthentication(new User());
-        chain.doFilter(request, response);
-    }
 
     @Override
->>>>>>> 4ba6791d3e25acd975f97cd08ebd30f11e416c9f:src/main/java/com/shop/filters/AuthenticationFilter.java
     public void destroy() {}
 }

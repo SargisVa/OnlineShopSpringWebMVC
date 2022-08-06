@@ -15,14 +15,14 @@ public class HomeController {
 
 
     @RequestMapping(method = RequestMethod.GET)
-<<<<<<< HEAD
+
     public ModelAndView getHome() {
         ModelAndView modelAndView = new ModelAndView("home");
         modelAndView.addObject("posts", DB.posts);
         return modelAndView;
-=======
+    }
+
     public ModelAndView getHome(HttpSession session) {
         return new ModelAndView("home");
->>>>>>> 4ba6791d3e25acd975f97cd08ebd30f11e416c9f
     }
 }

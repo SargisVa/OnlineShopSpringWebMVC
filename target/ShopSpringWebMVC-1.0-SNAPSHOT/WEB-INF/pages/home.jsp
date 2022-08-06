@@ -70,8 +70,18 @@
 <br><br>
 ----------------------------------------------------------------
 <c:choose>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <c:when test="${sessionScope.user != null}">
+        <a href="${pageContext.request.contextPath}/userprofile" class="user-name">${sessionScope.user.username}</a>
+=======
+    <c:when test="${user != null}">
+        <a href="${pageContext.request.contextPath}/userprofile" class="user-name">${user.username}</a>
+>>>>>>> 4ba6791d3e25acd975f97cd08ebd30f11e416c9f
+=======
     <c:when test="${sessionScope.user!=null}">
         <a href="${pageContext.request.contextPath}/userprofile" class="user-name">${sessionScope.user.username}</a><br>
+>>>>>>> 12bd1b44ed1315360eb12d8d4ed62e6c03a6f19c
     </c:when>
     <c:otherwise>
         <a href="${pageContext.request.contextPath}/login" class="log-in">Log in</a>
